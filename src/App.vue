@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div v-if="liked">좋아요 눌렀음</div>
+  <button v-else v-on:click="onClickButton">like</button>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+  data() {
+    return {
+      liked: false,
+    };
+  },
+  methods: {
+    onClickButton() {
+      this.liked = true;
+    },
+  },
+};
 </script>
 
 <style>
