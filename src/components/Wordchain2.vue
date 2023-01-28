@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: "Wordchain2",
+  name: "WordChain2",
   components: {},
   data() {
     return {
