@@ -1,15 +1,17 @@
 <template>
-  <div>{{ word }}</div>
-  <form v-on:submit="onSubmitForm">
-    <input type="text" v-model="value" ref="answer" />
-    <button>입력</button>
-    <div>{{ result }}</div>
-  </form>
+  <div>
+    <div>{{ word }}</div>
+    <form v-on:submit="onSubmitForm">
+      <input type="text" v-model="value" ref="answer" />
+      <button>입력</button>
+      <div>{{ result }}</div>
+    </form>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "App",
+  name: "Wordchain2",
   components: {},
   data() {
     return {
