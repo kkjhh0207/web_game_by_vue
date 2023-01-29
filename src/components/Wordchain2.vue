@@ -13,9 +13,10 @@
 export default {
   name: "WordChain2",
   components: {},
+  props: ["startWord"],
   data() {
     return {
-      word: "제로초",
+      word: this.startWord,
       reulst: "",
       value: "",
     };

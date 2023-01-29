@@ -1,9 +1,9 @@
 <template>
-  <WordChain2 />
+  <WordChain2 startWord="제로초" />
 
-  <WordChain2 />
+  <WordChain2 startWord="가나다" />
 
-  <WordChain2 />
+  <Word-chain2 startWord="바보보" />
 </template>
 
 <script>
